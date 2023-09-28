@@ -1,5 +1,5 @@
 # AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+The Airbnb clone project for which we are creating a copy of the Airbnb. Only some features will be implemented and will be listed below once completed. At this stage, we are implementing an additional storage option. Based on which database is chosen (file storage or database storage), JSON is used or MySQL and SQLalchemy is used via Python. Fabric is used for application deployment..
 
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
