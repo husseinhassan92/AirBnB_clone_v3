@@ -11,7 +11,7 @@ app.register_blueprint(app_views)
 
 
 @app.teardown_appcontext
-def close():
+def teardown(self):
     """close query after each session
     """
     storage.close()
