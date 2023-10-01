@@ -15,9 +15,10 @@ def status():
     """return JSON of OK status"""
     return jsonify({'status': 'OK'})
 
+
 @app_views.route('/stats')
 def count():
-    """"""
+    """return counts of all classes in storage"""
     counts = {
         "amenities": storage.count("Amenity"),
         "cities": storage.count("City"),
