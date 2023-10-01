@@ -85,12 +85,12 @@ class FileStorage:
         '''
         Count num objects in FileStorage
         '''
-        count = 0
+        counter = 0
 
         if cls is not None:
             for k in self.__objects.keys():
                 if cls in k:
-                    count += 1
+                    counter += 1
         else:
-            count = len(self.__objects)
-        return count
+            counter = len(self.__objects)
+        return counter

@@ -91,14 +91,14 @@ class DBStorage:
         '''
             Count num objects in DBstorage
         '''
-        count = 0
+        counter = 0
 
         if cls is not None:
             objs = self.__session.query(models.classes[cls]).all()
-            count = len(objs)
+            counter = len(objs)
         else:
             for k, v in models.classes.items():
                 if k != "BaseModel":
                     objs = self.__session.query(models.classes[k]).all()
-                    count += len(objs)
-        return count
+                    counter += len(objs)
+        return counter
