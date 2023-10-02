@@ -11,8 +11,8 @@ from models.amenity import Amenity
 def list_amenitiy():
     """return amenity in json form"""
     list = []
-    for state in storage().all('Amenity').values():
-        list.append(state.to_dict())
+    for amenity in storage().all('Amenity').values():
+        list.append(amenity.to_dict())
     return jsonify(list)
 
 
